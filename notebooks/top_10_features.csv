@@ -1,0 +1,11 @@
+Feature,Coefficient
+Money_Supply_Lagged CPI_Lagged,0.06298998204210011
+Consumer_Confidence,-0.057323610836624364
+Money_Supply_Lagged PPI_Lagged,-0.0445009067066892
+Interest_Rate_Lagged Consumer_Confidence,0.04402260083449565
+Interest_Rate_Lagged GDP_Growth,0.03323559242145406
+Interest_Rate_Lagged CPI_Lagged,0.032137281989756475
+Consumer_Confidence GDP_Growth,0.03020496491969354
+CPI_Lagged,0.030010848394893715
+PPI_Lagged,-0.028258100718632394
+Interest_Rate_Lagged^2,0.0197318370988405
