@@ -19,6 +19,9 @@ st.title("Polynomial Regression for Unemployment Rate Prediction")
 # Sidebar for file upload
 uploaded_file = st.sidebar.file_uploader("Upload your dataset (CSV format)", type=["csv"])
 
+# Sidebar for test data ratio
+test_size = st.sidebar.slider("Select Test Data Ratio", min_value=0.1, max_value=0.5, value=0.2, step=0.05)
+
 if uploaded_file:
     # Load the dataset
     data = pd.read_csv(uploaded_file)
@@ -31,7 +34,7 @@ if uploaded_file:
     y = data['Unemployment_Rate']
 
     # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X_lagged, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X_lagged, y, test_size=test_size, random_state=42)
 
     # Standardize the data
     scaler = StandardScaler()
